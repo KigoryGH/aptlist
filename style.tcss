@@ -19,8 +19,18 @@
     content-align: center top;
     color: #87cefa;
     text-style: bold;
+    padding: 2;
     }
 
 Horizontal {
     height: 1fr;
+}
+
+#search-box {
+    width: 40%;
+    border: #ffc0cb;
+
+
+#search {
+    width: 1fr;
 }
