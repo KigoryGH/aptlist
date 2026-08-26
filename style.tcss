@@ -27,10 +27,19 @@ Horizontal {
 }
 
 #search-box {
-    width: 40%;
-    border: #ffc0cb;
-
+    width: 99%;
+}
 
 #search {
     width: 1fr;
+}
+
+#browse {
+    margin-bottom: 17;
+    text-style: bold;
+    width: 100%;
+}
+
+#browse-list {
+    height: 1fr;
 }
