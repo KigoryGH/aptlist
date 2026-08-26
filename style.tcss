@@ -9,7 +9,7 @@
     width: 1fr;
     content-align: center top;
     text-style:bold;
-    color: $accent-lighten-3 #ffff;
+    color: #ffffff;
 }
 
 #sidebar {
@@ -17,7 +17,7 @@
     height: 100%;
     width: 28%;
     content-align: center top;
-    color: $accent-lighten-3 #87cefa;
+    color: #87cefa;
     text-style: bold;
     }
 
