@@ -1,4 +1,5 @@
-# Table of contents (I just love this feature when I see it in other repos)
+# Table of contents 
+### (I just love this feature when I see it in other repos)
 - [aptlist](#aptlist)
 - [why I made aptlist](#why-I-made-aptlist)
 - [the name](#The-name)
