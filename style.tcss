@@ -5,6 +5,17 @@ Static {
 
 #main {
     border: solid #7FFF00;
-    height: 10;
-    width: 20;
+    height: 100%;
+    width: 1fr;
+}
+
+#sidebar {
+    border: solid #7FFF00;
+    height: 100%;
+    width: 10;
+}
+
+
+Horizontal {
+    height: 1fr;
 }
