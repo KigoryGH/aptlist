@@ -1,3 +1,10 @@
 Static {
     content-align: center top;
+    color: yellow;
+}
+
+#main {
+    border: solid #7FFF00;
+    height: 10;
+    width: 20;
 }

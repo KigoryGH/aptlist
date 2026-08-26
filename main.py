@@ -1,10 +1,15 @@
 from textual.app import App
+from textual.containers import Horizontal
 from textual.widgets import Static
 
 class AptListApp(App):
-CSS_PATH = "style.tcss";
+    CSS_PATH = "style.tcss"
+
     def compose(self):
-        yield Static("Welcome to aptlist")
+        yield Static("aptlist", id="title")
+        with Horizontal():
+            yield Static("", id="sidebar")
+            yield Static("", id="main")
 
 if __name__ == "__main__":
     app = AptListApp()
