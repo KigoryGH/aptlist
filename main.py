@@ -8,8 +8,8 @@ class AptListApp(App):
     def compose(self):
         yield Static("aptlist", id="title")
         with Horizontal():
-            yield Static("", id="sidebar")
-            yield Static("", id="main")
+            yield Static("Search", id="sidebar")
+            yield Static("Information", id="main")
 
 if __name__ == "__main__":
     app = AptListApp()

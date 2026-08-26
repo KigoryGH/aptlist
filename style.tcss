@@ -1,20 +1,25 @@
-Static {
+#title {
     content-align: center top;
     color: yellow;
-}
+    }
 
 #main {
     border: solid #7FFF00;
     height: 100%;
     width: 1fr;
+    content-align: center top;
+    text-style:bold;
+    color: $accent-lighten-3 #ffff;
 }
 
 #sidebar {
-    border: solid #7FFF00;
+    border: solid #ff69b4;
     height: 100%;
-    width: 10;
-}
-
+    width: 28%;
+    content-align: center top;
+    color: $accent-lighten-3 #87cefa;
+    text-style: bold;
+    }
 
 Horizontal {
     height: 1fr;
