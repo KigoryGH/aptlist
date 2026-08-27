@@ -19,6 +19,21 @@ def get_installed_packages():
     return names
 
 
+def get_all_packages():
+    result = subprocess.run(
+        ["apt", "list"],
+        capture_output=True,
+        text=True
+    )
+    names = []
+    for line in result.stdout.splitlines()[1:]:
+        if not line.strip():
+            continue
+        parts = line.split("/")
+        names.append(parts[0])
+    return names
+
+
 def get_package_details(name):
     result = subprocess.run(
         ["apt-cache", "show", name],
@@ -56,7 +71,7 @@ class AptListApp(App):
                     yield Static("Search")
                     yield Input(placeholder="Search packages", id="search-box")
                 with Collapsible(title="Browse", id="browse"):
-                    yield OptionList(*get_installed_packages(), id="browse-list")
+                    yield OptionList(*get_all_packages(), id="browse-list")
             yield Static("Information", id="main", classes="panel")
 
 
