@@ -19,6 +19,15 @@ def get_installed_packages():
     return names
 
 
+def get_package_details(name):
+    result = subprocess.run(
+        ["apt-cache", "show", name],
+        capture_output=True,
+        text=True
+    )
+    return result.stdout
+
+
 class AptListApp(App):
     CSS_PATH = "style.tcss"
     BINDINGS = [
@@ -35,7 +44,9 @@ class AptListApp(App):
             widget.can_focus = True
 
     def on_option_list_option_selected(self, event):
-        self.query_one("#main", Static).update(event.option.prompt)
+        name = event.option.prompt
+        details = get_package_details(name)
+        self.query_one("#main", Static).update(details)
 
     def compose(self):
         yield Static("aptlist", id="title")
