@@ -4,7 +4,7 @@
 - [why I made aptlist](#why-I-made-aptlist)
 - [The name](#The-name)
 - [usage](#Usage)
-
+- [Conclution](#Conclution)
 
 # aptlist
 an attempt by a bad programmer to create an APT-based package browser. inspired by cargo-seek https://crates.io/crates/cargo-seek
@@ -22,3 +22,12 @@ then thrown away, so as the guy who made this program I only found one use case 
 but you dont know the package name, overall am proud that this is my first real repo.
 ## preview
 <img src="preview.gif" width="700">
+
+
+
+
+# Conclution
+this was a repo made for fun by me as a first repo and even though the project came out 99% useless and heavy and 20% of the code is claude  I still was proud of myself as this is my first repo and I enjoyed
+the experieience and learned alot about textual and git. i'd recommend that other people that want to create a repo to not overthink it and  go for it even if it's useless.
+I think I can do better if I knew how to code in python I literaly made this by looking at syntax from other repos and trial and error for hours
+Thanks for just clicking on this repo 
