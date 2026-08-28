@@ -36,5 +36,5 @@ but you dont know the package name, overall am proud that this is my first real 
 # Conclusion
 this was a repo made for fun by me as a first repo and even though the project came out 99% useless and heavy and 20% of the code is claude  I still was proud of myself as this is my first repo and I enjoyed
 the experience and learned a lot about textual and git. i'd recommend that other people that want to create a repo to not overthink it and  go for it even if it's useless.
-I think I can do better if I knew how to code in python I literally made this by looking at syntax from other repos and trial and error for hours
-Thanks for just clicking on this repo# Table of contents
+I think I can do better if I knew how to code in python I literally made this by looking at syntax from other repos and trial and error for hours.
+Thanks for just clicking on this repo :)
