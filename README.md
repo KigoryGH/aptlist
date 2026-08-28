@@ -14,3 +14,10 @@ am not a bad programmer am just a new programmer and this is just me messing aro
 
 # The name 
 I kinda just looked at lsusb and how simple it is so am trying to implement this simplicity while still making it look modern and easy to navigate around and thats how I came up with **_aptlist_** and you can run it using `aptls`
+
+# How to use it
+am gonna be honest with you aptlist turned out to be one of those programs that are used once for fun and
+then thrown away, so as the guy who made this program I only found one use case and it is if you want to see what random commands do you can go to them and check them out using apt ls it's like running apt show <package>
+but you dont know the package name, overall am proud that this is my first real repo.
+## preview
+<img src="demo.gif" width="700">
