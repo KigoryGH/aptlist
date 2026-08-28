@@ -3,7 +3,8 @@
 - [aptlist](#aptlist)
 - [why I made aptlist](#why-I-made-aptlist)
 - [The name](#The-name)
-- [usage](#Usage)
+- [Installation](#Installation)
+- [Usage](#Usage)
 - [Conclusion](#Conclusion)
 
 # aptlist
@@ -16,7 +17,7 @@ am not a bad programmer am just a new programmer and this is just me messing aro
 # The name 
 I kinda just looked at lsusb and how simple it is so am trying to implement this simplicity while still making it look modern and easy to navigate around and thats how I came up with **_aptlist_** and you can run it using `aptls`
 
-# installation
+# Installation
 just run this sequence of commands and you should be good
 ```bash
 #This will clone the repo, make the script executable, and symlink it into ~/.local/bin 
