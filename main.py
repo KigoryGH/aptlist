@@ -2,6 +2,7 @@ import subprocess
 from textual.app import App
 from textual.containers import Horizontal, Vertical
 from textual.widgets import Static, Input, Collapsible, OptionList
+from textual.widgets.option_list import Option
 
 
 def get_installed_packages():
@@ -59,7 +60,7 @@ class AptListApp(App):
             widget.can_focus = True
 
     def on_option_list_option_selected(self, event):
-        name = event.option.prompt
+        name = event.option.id
         details = get_package_details(name)
         self.query_one("#main", Static).update(details)
 
@@ -71,10 +72,18 @@ class AptListApp(App):
                     yield Static("Search")
                     yield Input(placeholder="Search packages", id="search-box")
                 with Collapsible(title="Browse", id="browse"):
-                    yield OptionList(*get_all_packages(), id="browse-list")
+                    all_names = sorted(set(get_all_packages()))
+                    installed_names = set(get_installed_packages())
+                    options = []
+                    for name in all_names:
+                        if name in installed_names:
+                            options.append(Option(f"[blue]{name}[/blue]", id=name))
+                        else:
+                            options.append(Option(name, id=name))
+                    yield OptionList(*options, id="browse-list")
             yield Static("Information", id="main", classes="panel")
 
 
 if __name__ == "__main__":
     app = AptListApp()
-    app.run()
+    app.run()   
