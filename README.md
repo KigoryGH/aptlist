@@ -25,6 +25,7 @@ cd aptlist
 chmod +x aptls
 mkdir -p ~/.local/bin
 ln -sf "$(pwd)/aptls" ~/.local/bin/aptls
+cd
 ```
 # Usage
 am gonna be honest with you aptlist turned out to be one of those programs that are used once for fun and
