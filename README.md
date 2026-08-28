@@ -28,6 +28,12 @@ mkdir -p ~/.local/bin
 ln -sf "$(pwd)/aptls" ~/.local/bin/aptls
 cd
 ```
+# Uninstall
+```bash
+rm ~/.local/bin/aptls
+rm -rf ~/aptlist
+```
+
 # Usage
 am gonna be honest with you aptlist turned out to be one of those programs that are used once for fun and
 then thrown away, so as the guy who made this program I only found one use case and it is if you want to see what random commands do you can go to them and check them out using apt ls it's like running apt show <package>
