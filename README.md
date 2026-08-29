@@ -27,8 +27,9 @@ chmod +x aptls
 mkdir -p ~/.local/bin
 ln -sf "$(pwd)/aptls" ~/.local/bin/aptls
 cd
+aptls
 ```
-# Uninstall
+### Uninstall
 ```bash
 rm ~/.local/bin/aptls
 rm -rf ~/aptlist
